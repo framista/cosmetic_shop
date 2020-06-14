@@ -1,0 +1,268 @@
+@less_iaicolorscheme_background_text_color: #333333;
+@light_grey: #e5e5e5;
+@text_color: @less_iaicolorscheme_background_text_color;
+@primary_color: #dca8a4;
+@black: #000000;
+
+.headline {
+  border-left: none;
+  padding-left: 0px;
+  text-transform: inherit;
+}
+
+#backTop {
+  border-radius: 10px;
+  border: 3px solid @primary_color;
+  color: @text_color;
+}
+#menu_additional {
+  display: flex;
+  align-items: center;
+  a {
+    color: @text_color;
+  }
+}
+
+#menu_basket {
+  a {
+    border: none;
+  }
+}
+
+#menu_navbar {
+  border-bottom: none;
+  &::before {
+    content: '';
+    display: block;
+    width: 200vw;
+    height: 2px;
+    transform: translateX(-50%);
+    background-color: @light_grey;
+    margin-bottom: 20px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 200vw;
+    height: 0.5px;
+    transform: translateX(-50%);
+    background-color: @light_grey;
+    box-shadow: 0 2px 6px 0.5px rgba(32, 33, 36, 0.28);
+  }
+
+  .nav-link {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 2px solid transparent;
+  }
+  .active {
+    border-bottom: 2px solid @primary_color;
+  }
+}
+#projector_productname {
+  .product_name__description {
+    width: 85%;
+    padding: 10px 0 20px;
+  }
+}
+#projector_photos {
+  .photos__link {
+    border-radius: 10px;
+  }
+}
+#projector_form {
+  .product_info_top {
+    height: 20px;
+    .item_info span {
+      max-width: 50px;
+    }
+    border: none !important;
+    .lt_description {
+      a {
+        color: @less_iaicolorscheme_background_text_color;
+        font-weight: 600 !important;
+      }
+    }
+  }
+  #projector_sizes_cont {
+    height: 40px;
+    .select_button {
+      border-radius: 5px;
+    }
+    .active {
+      border: 2px solid @primary_color;
+      &::before,
+      &::after {
+        border: none;
+        height: 0px;
+      }
+    }
+    &::after {
+      height: 0;
+    }
+  }
+  .projector_product_status_wrapper {
+    border-bottom: none;
+    margin: 0;
+    #projector_shipping_info {
+      margin: 10px 0px;
+      &::before,
+      .shipping_info {
+        color: @less_iaicolorscheme_background_text_color;
+      }
+      .shipping_info {
+        font-weight: 600;
+      }
+    }
+  }
+  .projector_price_subwrapper {
+    #projector_price_maxprice {
+      color: @primary_color;
+    }
+    .instalment_yousave {
+      display: none;
+    }
+  }
+  #projector_buy_section {
+    #projector_number_cont {
+      border-radius: 10px;
+    }
+    #projector_button_basket {
+      border-radius: 10px;
+      text-transform: uppercase;
+    }
+    #projector_button_observe {
+      color: @text_color;
+      padding: 10px 0px;
+      font-weight: 600;
+      &::before {
+        content: '+';
+      }
+    }
+    .projector_prodstock_compare {
+      display: none;
+    }
+  }
+  #projector_benefits {
+    .benefits__block {
+      padding: 5px 0;
+    }
+    a {
+      color: @text_color;
+    }
+  }
+}
+#component_projector_cms {
+  display: none;
+}
+#projector_in_bundle {
+  .products {
+    .product {
+      .product__icon {
+        border: none;
+      }
+      .product__promo,
+      .price {
+        color: @primary_color;
+        font-weight: 600;
+      }
+      h3 > a {
+        font-weight: 600;
+      }
+      .product__price_wrapper {
+        .price {
+          color: @text_color;
+        }
+      }
+      .product__see {
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 1em 2em;
+        border: 1px solid @primary_color;
+        border-radius: 10px;
+        color: @text_color;
+        margin-left: 80px;
+      }
+      &:nth-child(odd) {
+        .product__see {
+          background-color: @primary_color;
+          color: white;
+        }
+      }
+    }
+  }
+}
+#projector_longdescription {
+  background-color: @light_grey;
+}
+#product_questions_list .questions__button,
+#opinions_section #show_opinion_form {
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+#products_associated_zone3 {
+  .product {
+    border: none;
+  }
+  .product__prices {
+    text-align: left;
+  }
+}
+#projector_blog {
+  .article__more_link {
+    color: @text_color;
+    font-weight: 600;
+  }
+}
+footer {
+  background-color: @black;
+  #footer_links {
+    #menu_orders,
+    #menu_account {
+      border: none !important;
+    }
+    .footer_links_label {
+      color: @primary_color;
+    }
+    .menu_orders_item a,
+    .footer_links_sub a {
+      color: white;
+    }
+    .menu_orders_item {
+      i::before {
+        color: white;
+      }
+    }
+  }
+  #menu_contact {
+    background-color: @black;
+    &::before {
+      width: 0px;
+    }
+    ul {
+      background-color: @black;
+      li {
+        a {
+          color: white;
+          font-weight: 600;
+        }
+        .shopshortname,
+        .adress_street,
+        .adress_zipcode {
+          color: white;
+          font-weight: 600;
+        }
+      }
+    }
+    .logo_iai {
+      display: none;
+    }
+  }
+}
