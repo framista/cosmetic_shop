@@ -30919,6 +30919,17 @@ div.text_menu_sub li {
 }
 #projector_longdescription {
   background-color: #e5e5e5;
+  padding: 3em 2em;
+}
+#projector_longdescription .bold {
+  font-weight: 600;
+}
+#projector_longdescription ul {
+  list-style-type: none !important;
+  padding-left: 0px;
+}
+#projector_longdescription ul li {
+  margin-top: 3px;
 }
 #product_questions_list .questions__button,
 #opinions_section #show_opinion_form {
